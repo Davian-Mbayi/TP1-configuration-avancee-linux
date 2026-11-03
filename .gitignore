@@ -1,0 +1,10 @@
+*.iso
+*.vdi
+*.vbox
+*.vbox-prev
+*.log
+*.swp
+*.tmp
+.env
+*.pem
+*.key

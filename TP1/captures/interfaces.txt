@@ -1,0 +1,7 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s3           UP             10.0.2.15/24 fd17:625c:f037:2:a00:27ff:fe58:f31d/64 fe80::a00:27ff:fe58:f31d/64 
+enp0s8           UP             fe80::a00:27ff:fe69:4775/64 
+enp0s9           UP             
+enp0s10          UP             
+bond0            UP             10.42.0.10/24 
+bond0.42@bond0   UP             10.42.42.10/24 

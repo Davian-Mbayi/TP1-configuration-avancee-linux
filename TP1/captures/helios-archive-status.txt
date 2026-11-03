@@ -1,0 +1,11 @@
+○ helios-archive.service - Archivage de la telemetrie Helios
+     Loaded: loaded (/etc/systemd/system/helios-archive.service; static)
+     Active: inactive (dead) since Tue 2026-11-03 10:57:14 CET; 1h 11min ago
+TriggeredBy: ● helios-archive.timer
+   Main PID: 4730 (code=exited, status=0/SUCCESS)
+        CPU: 35ms
+
+nov. 03 10:57:14 srv-core systemd[1]: Starting Archivage de la telemetrie Helios...
+nov. 03 10:57:14 srv-core helios-archive[4748]: fin d'execution rc=0
+nov. 03 10:57:14 srv-core systemd[1]: helios-archive.service: Deactivated successfully.
+nov. 03 10:57:14 srv-core systemd[1]: Finished Archivage de la telemetrie Helios.

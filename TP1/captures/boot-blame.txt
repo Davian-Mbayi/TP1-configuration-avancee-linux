@@ -1,0 +1,89 @@
+5.970s sys-devices-platform-serial8250-tty-ttyS3.device
+5.970s dev-ttyS3.device
+5.958s dev-ttyS2.device
+5.958s sys-devices-platform-serial8250-tty-ttyS2.device
+5.955s sys-devices-platform-serial8250-tty-ttyS0.device
+5.955s dev-ttyS0.device
+5.954s sys-module-configfs.device
+5.942s dev-ttyS1.device
+5.942s sys-devices-platform-serial8250-tty-ttyS1.device
+5.310s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VBefe33a4e\x2d600e438d\x2dpart2.device
+5.310s dev-disk-by\x2dpartuuid-c0f6c6ae\x2d02.device
+5.310s dev-sda2.device
+5.310s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart2.device
+5.310s sys-devices-pci0000:00-0000:00:0d.0-ata3-host2-target2:0:0-2:0:0:0-block-sda-sda2.device
+5.310s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1\x2dpart2.device
+5.260s dev-disk-by\x2dpartuuid-c0f6c6ae\x2d01.device
+5.260s dev-sda1.device
+5.260s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VBefe33a4e\x2d600e438d\x2dpart1.device
+5.260s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart1.device
+5.260s sys-devices-pci0000:00-0000:00:0d.0-ata3-host2-target2:0:0-2:0:0:0-block-sda-sda1.device
+5.260s dev-disk-by\x2duuid-85fa7381\x2da83e\x2d4ec3\x2d8670\x2d3f25e6840d8e.device
+5.260s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1\x2dpart1.device
+5.250s dev-disk-by\x2ddiskseq-3.device
+5.250s sys-devices-pci0000:00-0000:00:0d.0-ata3-host2-target2:0:0-2:0:0:0-block-sda.device
+5.250s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.device
+5.250s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0.device
+5.250s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VBefe33a4e\x2d600e438d.device
+5.250s dev-sda.device
+4.483s sys-devices-pci0000:00-0000:00:0a.0-net-enp0s10.device
+4.483s sys-subsystem-net-devices-enp0s10.device
+4.468s sys-devices-pci0000:00-0000:00:08.0-net-enp0s8.device
+4.468s sys-subsystem-net-devices-enp0s8.device
+4.467s sys-subsystem-net-devices-enp0s9.device
+4.467s sys-devices-pci0000:00-0000:00:09.0-net-enp0s9.device
+4.326s sys-devices-pci0000:00-0000:00:03.0-net-enp0s3.device
+4.326s sys-subsystem-net-devices-enp0s3.device
+3.577s dracut-initqueue.service
+2.375s kdump.service
+ 992ms initrd-switch-root.service
+ 384ms NetworkManager.service
+ 221ms dnf-makecache.service
+ 218ms systemd-udev-trigger.service
+ 213ms systemd-vconsole-setup.service
+ 194ms dev-mqueue.mount
+ 190ms lvm2-monitor.service
+ 190ms dev-hugepages.mount
+ 184ms sys-kernel-tracing.mount
+ 183ms sys-kernel-debug.mount
+ 181ms dev-mapper-rlm\x2dswap.swap
+ 176ms modprobe@efi_pstore.service
+ 175ms modprobe@drm.service
+ 171ms user@1000.service
+ 169ms modprobe@fuse.service
+ 169ms kmod-static-nodes.service
+ 165ms nis-domainname.service
+ 151ms rsyslog.service
+ 142ms systemd-network-generator.service
+ 138ms systemd-tmpfiles-setup.service
+ 133ms systemd-remount-fs.service
+ 127ms systemd-journald.service
+ 122ms initrd-cleanup.service
+ 120ms systemd-sysctl.service
+ 114ms chronyd.service
+ 112ms sshd.service
+ 105ms systemd-sysusers.service
+  97ms dracut-cmdline.service
+  96ms systemd-logind.service
+  81ms boot.mount
+  68ms dracut-pre-pivot.service
+  65ms systemd-user-sessions.service
+  65ms systemd-udevd.service
+  62ms systemd-tmpfiles-setup-dev.service
+  61ms auditd.service
+  57ms sys-fs-fuse-connections.mount
+  56ms dracut-pre-udev.service
+  42ms systemd-journal-flush.service
+  38ms helios-archive.service
+  35ms systemd-boot-update.service
+  34ms systemd-random-seed.service
+  31ms systemd-fsck-root.service
+  29ms systemd-tmpfiles-clean.service
+  29ms dracut-shutdown.service
+  28ms initrd-parse-etc.service
+  25ms dbus-broker.service
+  19ms user-runtime-dir@1000.service
+  16ms initrd-udevadm-cleanup-db.service
+  12ms systemd-update-utmp-runlevel.service
+  11ms systemd-update-utmp.service
+  10ms modprobe@configfs.service

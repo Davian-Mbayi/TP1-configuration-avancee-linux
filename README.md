@@ -1,53 +1,62 @@
 
-# TP1 — Configuration avancée du système Linux
+# TP1 ï¿½ Configuration avancï¿½e du systï¿½me Linux
 
-## Présentation
+## Prï¿½sentation
 
-Ce dépôt contient les travaux réalisés dans le cadre du TP1 du module **Administration d'un Linux Server**.
+Ce dï¿½pï¿½t contient les travaux rï¿½alisï¿½s dans le cadre du TP1 du module **Administration d'un Linux Server**.
 
-L'objectif est de mettre en œuvre l'administration avancée d'un environnement Rocky Linux 9 à travers trois missions.
+L'objectif est de mettre en ï¿½uvre l'administration avancï¿½e d'un environnement Rocky Linux 9 ï¿½ travers trois missions.
 
 ## Environnement technique
 
-- Système : Rocky Linux 9.8
+- Systï¿½me : Rocky Linux 9.8
 - Virtualisation : Oracle VirtualBox
 - Serveur principal : srv-core
 - Serveur secondaire : srv-edge
 - Gestionnaire de services : systemd
-- Réseau : NetworkManager, bond active-backup, VLAN 802.1Q
+- Rï¿½seau : NetworkManager, bond active-backup, VLAN 802.1Q
 - Automatisation : Bash et systemd timers
 - Gestion de versions : Git et GitHub
 
 ## Missions
 
-### Mission 1 — Services et processus
-- Création d'un service systemd personnalisé.
-- Gestion des redémarrages automatiques.
-- Limitation des ressources CPU et mémoire.
-- Analyse de la séquence de démarrage.
+### Mission 1 ï¿½ Services et processus
+- Crï¿½ation d'un service systemd personnalisï¿½.
+- Gestion des redï¿½marrages automatiques.
+- Limitation des ressources CPU et mï¿½moire.
+- Analyse de la sï¿½quence de dï¿½marrage.
+### Mission 1.1 â€” Analyse du dÃ©marrage de Linux
 
-### Mission 2 — Réseau avancé
-- Agrégation de liens active-backup.
+L'analyse du dÃ©marrage de la machine `srv-core` a Ã©tÃ© rÃ©alisÃ©e avec les commandes `systemd-analyze`, `systemd-analyze blame` et `systemd-analyze critical-chain`.
+
+Le temps total de dÃ©marrage mesurÃ© est de **12,164 secondes**, rÃ©parti entre 2,113 secondes pour le noyau, 5,227 secondes pour l'initrd et 4,823 secondes pour l'espace utilisateur. La cible `multi-user.target` est atteinte aprÃ¨s 2,604 secondes dans l'espace utilisateur.
+
+La commande `systemd-analyze blame` met notamment en Ã©vidence les pÃ©riphÃ©riques sÃ©rie virtuels, les pÃ©riphÃ©riques disque et les interfaces rÃ©seau. La chaÃ®ne critique montre que `rsyslog.service` dÃ©pend de `network-online.target`, lui-mÃªme liÃ© au dÃ©marrage de NetworkManager.
+
+Ces commandes permettent d'identifier les unitÃ©s et dÃ©pendances impliquÃ©es dans le dÃ©marrage et de disposer d'une mesure de rÃ©fÃ©rence pour les optimisations demandÃ©es dans le TP.
+
+### Mission 2 ï¿½ Rï¿½seau avancï¿½
+- Agrï¿½gation de liens active-backup.
 - Configuration du VLAN 42.
-- Routage par règles.
+- Routage par rï¿½gles.
 
-### Mission 3 — Automatisation
-- Développement d'un script Bash robuste.
-- Archivage et rotation des données.
+### Mission 3 ï¿½ Automatisation
+- Dï¿½veloppement d'un script Bash robuste.
+- Archivage et rotation des donnï¿½es.
 - Planification avec systemd timer.
 - Comparaison avec cron.
 
 ### Mission bonus
-- Déclenchement automatique avec une unité systemd path.
+- Dï¿½clenchement automatique avec une unitï¿½ systemd path.
 
 ## Organisation
 
 - TP1/configs/ : fichiers de configuration.
-- TP1/captures/ : preuves et résultats des tests.
-- TP1/RAPPORT.md : compte rendu détaillé.
+- TP1/captures/ : preuves et rï¿½sultats des tests.
+- TP1/RAPPORT.md : compte rendu dï¿½taillï¿½.
 
 ## Auteur
 
-À compléter.
+ï¿½ complï¿½ter.
 
 
