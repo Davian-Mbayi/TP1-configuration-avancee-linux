@@ -1,0 +1,7 @@
+[Unit]
+Description=Helios SSH Watcher
+After=network.target firewalld.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/helios-watch-auth.sh

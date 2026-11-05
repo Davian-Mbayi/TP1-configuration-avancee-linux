@@ -1,0 +1,11 @@
+[Unit]
+Description=Helios SSH Watcher Timer
+
+[Timer]
+OnCalendar=*:0/2
+Persistent=no
+AccuracySec=10s
+Unit=helios-watch-auth.service
+
+[Install]
+WantedBy=timers.target
