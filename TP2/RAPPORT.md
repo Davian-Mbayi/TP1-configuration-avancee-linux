@@ -1,20 +1,20 @@
-\# TP2 — Gestion avancée des utilisateurs et des groupes
+# TP2 — Gestion avancée des utilisateurs et des groupes
 
 
 
-\*\*Système :\*\* Rocky Linux 9.8  
+*Système :* Rocky Linux 9.8  
 
-\*\*Machine :\*\* srv-core  
+*Machine :* srv-core  
 
-\*\*Objectif :\*\* Mettre en œuvre une politique avancée de gestion des comptes, des permissions, des ACL et des privilèges sudo.
-
-
-
-\## Mission 1 — Comptes, groupes et politique d'authentification
+*Objectif :* Mettre en œuvre une politique avancée de gestion des comptes, des permissions, des ACL et des privilèges sudo.
 
 
 
-\### Politique générale
+## Mission 1 — Comptes, groupes et politique d'authentification
+
+
+
+### Politique générale
 
 
 
@@ -56,7 +56,7 @@ Le test d'un mot de passe trop court (`helios`) a été refusé. Le verrouillage
 
 
 
-\### Groupes et utilisateurs
+### Groupes et utilisateurs
 
 
 
@@ -86,11 +86,11 @@ Julien a été défini comme administrateur du groupe `transport` et a pu y ajou
 
 
 
-\## Mission 2 — Permissions spéciales et umask
+## Mission 2 — Permissions spéciales et umask
 
 
 
-\### Setgid
+### Setgid
 
 
 
@@ -102,7 +102,7 @@ Un fichier créé par Tarek dans ce répertoire hérite du groupe `transport`. D
 
 
 
-\### Sticky bit
+### Sticky bit
 
 
 
@@ -114,7 +114,7 @@ Nadia a créé un fichier que Tarek n'a pas pu supprimer. Tarek a cependant pu s
 
 
 
-\### Comparaison des umasks
+### Comparaison des umasks
 
 
 
@@ -138,7 +138,7 @@ Le script `/etc/profile.d/helios-umask.sh` applique :
 
 
 
-\### Inventaire SUID/SGID
+### Inventaire SUID/SGID
 
 
 
@@ -166,7 +166,7 @@ Un script shell de test en mode 4755 a montré que le bit SUID n'est pas appliqu
 
 
 
-\### Binaire SGID Helios
+### Binaire SGID Helios
 
 
 
@@ -182,7 +182,7 @@ Julien ne peut pas lire directement ce journal, mais peut utiliser le programme 
 
 
 
-\## Mission 3 — ACL
+## Mission 3 — ACL
 
 
 
@@ -204,7 +204,7 @@ Des ACL par défaut ont été définies pour les nouveaux fichiers et répertoir
 
 
 
-\### Masque ACL et chmod
+### Masque ACL et chmod
 
 
 
@@ -220,7 +220,7 @@ La commande `setfacl -m m::rwx` a restauré les droits effectifs d'écriture.
 
 
 
-\### Sauvegarde et restauration
+### Sauvegarde et restauration
 
 
 
@@ -232,7 +232,7 @@ La restauration a nécessité de se placer à la racine `/`, car les chemins de 
 
 
 
-\### Comparaison des copies et archivage
+### Comparaison des copies et archivage
 
 
 
@@ -244,7 +244,7 @@ La restauration a nécessité de se placer à la racine `/`, car les chemins de 
 
 
 
-\## Mission 4 — Sudo avancé
+## Mission 4 — Sudo avancé
 
 
 
@@ -270,7 +270,7 @@ Les sessions sudo ont été consultées avec `sudoreplay -l`.
 
 
 
-\### Démonstration d'une mauvaise configuration
+### Démonstration d'une mauvaise configuration
 
 
 
@@ -286,7 +286,7 @@ La règle dangereuse a ensuite été supprimée.
 
 
 
-\### Alternative sécurisée
+### Alternative sécurisée
 
 
 
@@ -294,7 +294,7 @@ Une règle `sudoedit` a été configurée pour permettre à Nadia de modifier le
 
 
 
-\## Conclusion
+## Conclusion
 
 
 
