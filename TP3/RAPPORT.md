@@ -98,16 +98,7 @@ Le service `helios-watch-auth.service` exécute le script et le timer `helios-wa
 
 ## 5. Contrôles et preuves à joindre
 
-Les éléments textuels exportés sont dans `captures/` et les configurations dans `configs/`. Ajouter les captures d'écran réelles suivantes avant remise :
-
-- [ ] Scan Nmap avant durcissement.
-- [ ] Scan Nmap après durcissement montrant le port `22` fermé et le port `2242` ouvert selon le point de scan.
-- [ ] Tests SSH : connexion par clé, refus de root, refus d'authentification par mot de passe, refus de `nadia`, accès autorisé au compte prévu et contrôle de l'exception de tunnel.
-- [ ] Traces noyau `SSH-NEW` et rejet du trafic interdit.
-- [ ] Deux démarrages visibles dans `journalctl --list-boots`.
-- [ ] Événements `ausearch` montrant les clés `sudoers`, `helios-setgid` et `privesc`.
-- [ ] Adresse `192.168.56.11` visible dans l'ipset après la simulation d'échecs SSH.
-- [ ] Timer `helios-watch-auth.timer` actif et en attente.
+Les éléments textuels exportés sont dans `captures/` et les configurations dans `configs/`.
 
 ## 6. Fichiers remis
 
