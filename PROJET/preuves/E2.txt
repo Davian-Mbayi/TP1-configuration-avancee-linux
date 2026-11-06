@@ -1,0 +1,40 @@
+E2 - Droits et ACL
+drwxrws---+ 2 root suivi 24  4 nov.  21:52 /srv/helios/suivi/www
+# file: /srv/helios/suivi/www
+# owner: root
+# group: suivi
+# flags: -s-
+user::rwx
+user:helios-suivi:rwx
+user:zabbix:--x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:helios-suivi:rwx
+default:group::rwx
+default:mask::rwx
+default:other::---
+
+-rw-rw----+ 1 lea suivi 42  4 nov.  21:52 /srv/helios/suivi/www/index.html
+# file: /srv/helios/suivi/www/index.html
+# owner: lea
+# group: suivi
+user::rw-
+user:helios-suivi:rwx	#effective:rw-
+group::rwx	#effective:rw-
+mask::rw-
+other::---
+
+Bienvenue sur le portail de suivi Helios.
+  Fichier : /srv/helios/suivi/www/index.html
+   Taille : 42        	Blocs : 8          Blocs d'E/S : 4096   fichier
+Périphérique : fd00h/64768d	Inœud : 51044214    Liens : 1
+Accès : (0660/-rw-rw----)  UID : ( 5104/     lea)   GID : ( 5003/   suivi)
+Contexte : unconfined_u:object_r:var_t:s0
+ Accès : 2026-11-04 21:53:36.003276223 +0100
+Modif. : 2026-11-04 21:52:18.842147525 +0100
+Changt : 2026-11-04 21:52:18.842147525 +0100
+  Créé : 2026-11-04 21:52:18.842147525 +0100
+ls: impossible d'ouvrir le répertoire '/srv/helios/suivi/www': Permission non accordée
+cat: /srv/helios/suivi/www/index.html: Permission non accordée

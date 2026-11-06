@@ -1,0 +1,16 @@
+E5 - Delegation Sudo
+Attention : /etc/sudoers.d/90-helios-ops:11:12: Cmnd_Alias « DANGEREUX » n'est pas utilisé
+/etc/sudoers : analyse réussie
+/etc/sudoers.d/90-helios-ops : analyse réussie
+/etc/sudoers.d/91-helios-nadia : analyse réussie
+/etc/sudoers.d/92-helios-suivi : analyse réussie
+-r--r-----. 1 root root 382  5 nov.  16:24 /etc/sudoers.d/92-helios-suivi
+Entrées Defaults correspondant pour lea sur srv-core :
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin
+
+L'utilisateur lea peut utiliser les commandes suivantes sur srv-core :
+    (root) /usr/bin/systemctl restart helios-suivi.service
+    (root) /usr/bin/systemctl status helios-suivi.service --no-pager
+    (root) /usr/bin/systemctl start helios-suivi-publish.service
+    (root) /usr/bin/journalctl -u helios-suivi.service -n 100 --no-pager
+    (root) /usr/bin/journalctl -u helios-suivi-publish.service -n 100 --no-pager

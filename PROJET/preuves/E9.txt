@@ -1,0 +1,15 @@
+E9 - Sauvegarde et restauration
+jeu. 05 nov. 2026 18:54:17 CET
+Archives
+total 8,0K
+-rw-------. 1 root root 3,5K  5 nov.  17:36 suivi-20261105-173658.tar.gz
+-rw-r--r--. 1 root root   95  5 nov.  17:36 suivi-20261105-173658.tar.gz.sha256
+Vérification SHA256
+suivi-20261105-173658.tar.gz: Réussi
+Timer
+active
+enabled
+ Test Restauration
+total 8
+-rw-------+ 1 helios-suivi suivi 183  5 nov.  17:36 etat.json
+-rw-rw----+ 1 lea          suivi  42  4 nov.  21:52 index.html

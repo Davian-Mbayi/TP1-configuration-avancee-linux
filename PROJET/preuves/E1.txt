@@ -1,0 +1,16 @@
+getent group suivi
+suivi:x:5003:
+id lea
+uid=5104(lea) gid=5003(suivi) groupes=5003(suivi)
+getent passwd lea
+lea:x:5104:5003:Lea Fabre - responsable suivi des tournees:/home/lea:/bin/bash
+chage -l lea
+Last password change					: nov. 04, 2026
+Password expires					: févr. 02, 2027
+Password inactive					: févr. 09, 2027
+Account expires						: never
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14
+getent passwd helios-suivi
+helios-suivi:x:994:993::/srv/helios/suivi:/sbin/nologin
